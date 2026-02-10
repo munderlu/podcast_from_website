@@ -2,10 +2,13 @@
 
 ## 1. Installation von Erweiterungen
 
+- `edge_tts` für die Erzeugung einer Audio-Datei
+- `pydub` um Audiodateien zusammenzufügen
+
 ### 1.1 Systemweite Installation
 
 ```bash
-pip install gTTS
+pip install edge_tts pydub
 ```
 
 > ⚠️ Hinweis: Die systemweite Installation ist einfach, kann aber zu Versionskonflikten mit anderen Python-Projekten führen.
@@ -33,10 +36,10 @@ pip install gTTS
      .venv\Scripts\Activate.ps1
      ```
 
-3. **gTTS installieren**
+3. **benötigte Pakete installieren**
 
    ```bash
-   pip install gTTS
+   pip install edge_tts pydub
    ```
 
 4. **Virtuelle Umgebung verlassen**
@@ -44,3 +47,22 @@ pip install gTTS
    ```bash
    deactivate
    ```
+
+---
+
+### 1.3 Installation von zusätzlich benötigten Programmen
+
+- `ffmpeg` für die Verarbeitung von Audio- und Video-Dateien
+
+* **Linux / macOS**
+
+   ```bash
+   sudo apt update
+   sudo apt install ffmpeg
+   ```
+* **Windows (PowerShell)**
+
+   ```powershell
+   choco install ffmpeg
+   ```
+   oder über einen einfachen Download und hinzufügen zu `PATH`

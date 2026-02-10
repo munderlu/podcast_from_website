@@ -1,3 +1,3 @@
 from tts import *
 
-beispiel()
+asyncio.run(generate_and_merge(return_file("test.txt"), "wikipedia-eintrag.mp3"))
