@@ -1,3 +1,11 @@
 from tts import *
+from telegram import *
 
-asyncio.run(generate_and_merge(return_file("test.txt"), "wikipedia-eintrag.mp3"))
+FILE_NAME = "test2.txt"
+OUTPUT_NAME = "test.mp3"
+
+#asyncio.run(generate_and_merge(return_file(FILE_NAME), OUTPUT_NAME))
+
+#send_file(OUTPUT_NAME)
+
+send_text("Ich kann automatisch text verschicken.")

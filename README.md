@@ -66,3 +66,6 @@ pip install edge_tts pydub
    choco install ffmpeg
    ```
    oder über einen einfachen Download und hinzufügen zu `PATH`
+
+## 2. Die Konfiguration
+- `chat_id.txt` und `token.txt` erstellen mit den jeweiligen Daten
