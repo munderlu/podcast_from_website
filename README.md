@@ -4,11 +4,12 @@
 
 - `edge_tts` für die Erzeugung einer Audio-Datei
 - `pydub` um Audiodateien zusammenzufügen
+- `beautifulsoup4` um HTML-Code von einer Webseite zu verarbeiten
 
 ### 1.1 Systemweite Installation
 
 ```bash
-pip install edge_tts pydub
+pip install edge_tts pydub beautifulsoup4
 ```
 
 > ⚠️ Hinweis: Die systemweite Installation ist einfach, kann aber zu Versionskonflikten mit anderen Python-Projekten führen.
@@ -39,7 +40,7 @@ pip install edge_tts pydub
 3. **benötigte Pakete installieren**
 
    ```bash
-   pip install edge_tts pydub
+   pip install edge_tts pydub beautifulsoup4
    ```
 
 4. **Virtuelle Umgebung verlassen**
@@ -68,4 +69,5 @@ pip install edge_tts pydub
    oder über einen einfachen Download und hinzufügen zu `PATH`
 
 ## 2. Die Konfiguration
+- In Telegram den `botfather` suchen, einen neuen Bot erstellen und die Chat-ID herausfinden.
 - `chat_id.txt` und `token.txt` erstellen mit den jeweiligen Daten
