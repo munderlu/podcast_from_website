@@ -71,3 +71,4 @@ pip install edge_tts pydub beautifulsoup4
 ## 2. Die Konfiguration
 - In Telegram den `botfather` suchen, einen neuen Bot erstellen und die Chat-ID herausfinden.
 - `chat_id.txt` und `token.txt` erstellen mit den jeweiligen Daten
+- Konfiguration in `scraper.py` an die gewünschte Website anpassen
