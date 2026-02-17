@@ -5,11 +5,13 @@
 - `edge_tts` für die Erzeugung einer Audio-Datei
 - `pydub` um Audiodateien zusammenzufügen
 - `beautifulsoup4` um HTML-Code von einer Webseite zu verarbeiten
+- `requests` um mit dem Internet zu kommunizieren
+- `audioop-lts` für die Audio-Verarbeitung
 
 ### 1.1 Systemweite Installation
 
 ```bash
-pip install edge_tts pydub beautifulsoup4
+pip install edge_tts pydub beautifulsoup4 requests audioop-lts
 ```
 
 > ⚠️ Hinweis: Die systemweite Installation ist einfach, kann aber zu Versionskonflikten mit anderen Python-Projekten führen.
@@ -40,7 +42,7 @@ pip install edge_tts pydub beautifulsoup4
 3. **benötigte Pakete installieren**
 
    ```bash
-   pip install edge_tts pydub beautifulsoup4
+   pip install edge_tts pydub beautifulsoup4 requests audioop-lts
    ```
 
 4. **Virtuelle Umgebung verlassen**

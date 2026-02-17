@@ -1,13 +1,18 @@
 import requests
+import os
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+TOKEN_FILE = os.path.join(SCRIPT_DIR, 'token.txt')
+CHAT_ID_FILE = os.path.join(SCRIPT_DIR, 'chat_id.txt')
 
 def get_token():
-    with open("token.txt") as file:
-        TOKEN = file.read()
+    with open(TOKEN_FILE) as file:
+        TOKEN = file.read().strip()
         return TOKEN
 
 def get_chat_id():
-    with open("chat_id.txt") as file:
-        CHAT_ID = file.read()
+    with open(CHAT_ID_FILE) as file:
+        CHAT_ID = file.read().strip()
         return CHAT_ID
 
 def send_text(text):
@@ -33,3 +38,6 @@ def send_file(FILE_PATH):
         requests.post(url, data=data, files=files)
         print("Die Datei wurde gesendet.")
 
+
+if __name__ == "__main__":
+	send_text("Test")
