@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-def get_latest_post(blog_url):
+def get_latest_post_url(blog_url):
     response = requests.get(blog_url)
     soup = BeautifulSoup(response.content, "html.parser")
     print("Lade Daten von der Website ...")
@@ -12,9 +12,11 @@ def get_latest_post(blog_url):
     latest_post_link_element = soup.select_one('.post-title.entry-title a')
     latest_post_url = latest_post_link_element['href']
     print(f"URL des neusten Beitrags: {latest_post_url}")
+    return latest_post_url
 
+def get_content(url):
     # den neusten Beitrag abrufen
-    post_response = requests.get(latest_post_url)
+    post_response = requests.get(url)
     post_soup = BeautifulSoup(post_response.content, 'html.parser')
 
     # Überschrift abrufen
@@ -41,4 +43,4 @@ def save_data(data, OUTPUT_NAME):
     print("Der Text wurde gespeichert ...")
 
 if __name__ == "__main__":
-    save_data(get_latest_post("https://lugkirchheim.de"), "text2.txt")
+    save_data(get_content(get_latest_post_url("https://lugkirchheim.de"), "text2.txt"))

@@ -7,7 +7,7 @@ FILE_NAME = "test2.txt"
 OUTPUT_NAME = "test.mp3"
 
 # Daten von der Webseite holen und Titel verschicken
-data = get_latest_post(URL)
+data = get_content(get_latest_post_url(URL))
 save_data(data, FILE_NAME)
 send_text(data[0])
 
