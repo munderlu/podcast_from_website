@@ -43,4 +43,4 @@ def save_data(data, OUTPUT_NAME):
     print("Der Text wurde gespeichert ...")
 
 if __name__ == "__main__":
-    save_data(get_content(get_latest_post_url("https://lugkirchheim.de"), "text2.txt"))
+    save_data(get_content(get_latest_post_url("https://lugkirchheim.de")), "text2.txt")
